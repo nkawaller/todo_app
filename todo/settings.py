@@ -58,9 +58,15 @@ ROOT_URLCONF = 'todo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR.joinpath('templates')],
-        'APP_DIRS': True,
+        'DIRS': [],
+        'APP_DIRS': False,
         'OPTIONS': {
+            'loaders': [
+            (
+                'django.template.loaders.filesystem.Loader',
+                [os.path.join(BASE_DIR, 'templates')],
+            ),
+        ],
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -122,3 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
