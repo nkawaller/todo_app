@@ -1,12 +1,12 @@
 <template>
-  <p>{{ greeting }} Vue!</p>
+  <H1>{{ greeting }}</H1>
 </template>
 
 <script>
 module.exports = {
   data: function() {
     return {
-      greeting: "Nathan's"
+      greeting: "Nathan's Vue Todo App"
     };
   }
 };
