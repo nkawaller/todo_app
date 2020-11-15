@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from "react-dom";
+import Vue from 'vue';
+import Parent from './Parent.vue';
 
-ReactDOM.render(
-  <h1>Hello, react!</h1>,
-  document.getElementById('root')
-);
+new Vue({
+   el: "#hello",
+   render: h => h(Parent)
+});
