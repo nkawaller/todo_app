@@ -1,6 +1,7 @@
-function component() {
-    const element = document.createElement('div');
-    element.innerHTML = 'Hello webpack';
-    return element;
-  }
-  document.body.appendChild(component());
+import Vue from 'vue';
+import Parent from './Parent.vue';
+
+new Vue({
+   el: "#hello",
+   render: h => h(Parent)
+});

@@ -6,5 +6,6 @@ app_name = 'app'
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name='index.html'), name='index'),
-    path('hello_webpack/', TemplateView.as_view(template_name='hello_webpack.html'), name='hello')
+    path('hello_webpack/', TemplateView.as_view(template_name='hello_webpack.html'), name='hello'),
+    path("hello_vue", TemplateView.as_view(template_name="hello_vue.html"), name='hello_vue'),
 ]

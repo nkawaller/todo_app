@@ -1,0 +1,8 @@
+{% load static %}
+
+{% block content %}
+<h1 class="text-muted">HTML Content outside Vue app 'PARENT'</h1>
+<div id="hello" class="container"></div>
+<script src="{% static 'index-bundle.js' %}"></script>
+
+{% endblock content %}
