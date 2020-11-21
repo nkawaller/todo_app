@@ -6,7 +6,7 @@
 module.exports = {
   data: function() {
     return {
-      greeting: "Nathan's Vue Todo App"
+      greeting: "I changed it to App"
     };
   }
 };

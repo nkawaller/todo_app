@@ -1,7 +1,7 @@
 import Vue from 'vue';
-import Parent from './Parent.vue';
+import App from './App.vue';
 
 new Vue({
-   el: "#hello",
-   render: h => h(Parent)
+   el: "#app",
+   render: h => h(App)
 });
