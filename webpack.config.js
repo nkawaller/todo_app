@@ -19,6 +19,13 @@ module.exports = {
         loader: "babel-loader",
         options: { presets: ["@babel/preset-env", "@babel/preset-react"] }
       },
+      {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+        ]
+      }
     ]
   },
   plugins: [new VueLoaderPlugin()]
