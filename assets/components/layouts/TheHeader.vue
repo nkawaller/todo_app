@@ -8,7 +8,7 @@
 export default {
     data() {
         return {
-            greeting: "This is data from the component"
+            greeting: "Todo App"
         }
     },
 };

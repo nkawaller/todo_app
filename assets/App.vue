@@ -11,7 +11,7 @@ export default {
   },
   data() {
     return {
-      greeting: "Now adding a header"
+      // greeting: "Now adding a header"
     }
   }
 };
