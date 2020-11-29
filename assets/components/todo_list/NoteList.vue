@@ -1,13 +1,18 @@
 <template>
 <div>
-    <base-card class="base-card">
-    <h1>UL will go here</h1>
+    
     <ul>
+        <base-card class="base-card">
         <li>Todo 1</li>
+        </base-card>
+        <base-card class="base-card">
         <li>Todo 2</li>
+        </base-card>
+        <base-card class="base-card">
         <li>Todo 3</li>
+        </base-card>
     </ul>
-    </base-card>
+    
 </div>
 </template>
 
