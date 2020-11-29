@@ -1,22 +1,19 @@
 <template>
 <div>
     <ul>
+        <li v-for="note in storedNotes" :key="note.name">
         <base-card class="base-card">
-        <li>Todo 1</li>
+            {{ note.name }}
         </base-card>
-        <base-card class="base-card">
-        <li>Todo 2</li>
-        </base-card>
-        <base-card class="base-card">
-        <li>Todo 3</li>
-        </base-card>
+        </li>
     </ul>
-    
 </div>
 </template>
 
 <script>
+import BaseCard from '../UI/BaseCard.vue';
 export default {
+  components: { BaseCard },
     data() {
         return {
             storedNotes: [
