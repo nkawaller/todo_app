@@ -2,6 +2,7 @@
 <div>
   <the-header title='greeting'></the-header>
   <note-list></note-list>
+  <data-store></data-store>
     </div>
 </template>
 
@@ -12,7 +13,7 @@ import NoteList from './components/todo_list/NoteList.vue';
 export default {
   components: {
     TheHeader,
-    NoteList
+    NoteList,
   },
   data() {
     return {

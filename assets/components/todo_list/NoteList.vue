@@ -1,6 +1,5 @@
 <template>
 <div>
-    
     <ul>
         <base-card class="base-card">
         <li>Todo 1</li>
@@ -18,6 +17,27 @@
 
 <script>
 export default {
+    data() {
+        return {
+            storedNotes: [
+                {
+                    name: 'note 1',
+                    editing: 'false',
+                    completed: 'false'
+                },
+                {
+                    name: 'note 2',
+                    editing: 'false',
+                    completed: 'false'
+                },
+                {
+                    name: 'note 2',
+                    editing: 'false',
+                    completed: 'false'
+                }
+            ]
+        };
+    },
     
 }
 </script>
